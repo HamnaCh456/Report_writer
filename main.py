@@ -7,7 +7,7 @@ import os
 from crewai_tools import SerperDevTool
 import warnings
 from crewai.llm import LLM
-import scraper_tool_for_agent
+import tool
 import streamlit as st
 
 warnings.filterwarnings("ignore")
@@ -20,7 +20,7 @@ llm = LLM(
 )
 os.environ["SERPER_API_KEY"] = "NA"
 search_web_tool = SerperDevTool(n_results=10)
-scraper_tools=scraper_tool_for_agent.MyCustomTool()
+scraper_tools=tool.MyCustomTool()
 researcher = Agent(
     role="Web Researcher",
     goal="Identify the most relevant and reliable sources on {topic}. Return a list of URLs with their titles and summaries.",
