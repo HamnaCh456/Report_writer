@@ -31,27 +31,39 @@ This project automates the process of researching a topic from the web and gener
 - Firecrawl API
 - Gemini API
 
-### 🚀 How to Run
+### 🚀 How to Run the Project
 
-1. Clone this repo.
-2. Install dependencies:  
+1. **Clone the repository**
+   Open your terminal and run:
+
+   ```bash
+   git clone https://github.com/HamnaCh456/Report_writer
+   
+2. **Install dependencies**
+   Make sure you have Python ≥ 3.8 installed, then run:
+
    ```bash
    pip install -r requirements.txt
-````
-
-3. Set your API keys in a `.env` file:
-
    ```
-   GEMINI_API_KEY=your_gemini_key
-   SERPER_API_KEY=your_serper_key
-   FIRECRAWL_API_KEY=your_firecrawl_key
+
+3. **Set up environment variables**
+   Create a `.env` file in the root directory and add the following keys:
+
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key
+   SERPER_API_KEY=your_serper_api_key
+   FIRECRAWL_API_KEY=your_firecrawl_api_key
    ```
-4. Run the app:
+
+4. **Run the Streamlit app**
+   Use the following command to start the app:
 
    ```bash
    streamlit run main.py
- 
+   ```
 
----
+5. **Use the App**
 
-
+   * Enter a product, topic, or company name in the input field.
+   * Click **"Generate Report"**.
+   * The AI agents will search, scrape, and compile a clean report directly in the interface.
