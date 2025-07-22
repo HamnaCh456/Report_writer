@@ -1,0 +1,6 @@
+streamlit
+crewai
+crewai-tools
+firecrawl
+python-dotenv
+pydantic
