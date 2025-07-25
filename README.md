@@ -10,6 +10,9 @@ This project automates the process of researching a topic from the web and gener
 - Fully automated agent collaboration
 - Simple **Streamlit UI** for user interaction
 
+### Demo
+[![Watch the demo]](https://youtu.be/B1h4NpqzXkU)
+
 ### 📦 How It Works
 
 1. User enters a topic (e.g. a product or company).
